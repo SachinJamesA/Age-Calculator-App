@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Primary Colors */
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* Neutral  Colors*/
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: var(--Light-grey);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: var(--White);
+    /* height: 70vh; */
+    height: 500px;
+    width: 55%;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 150px;
+    position: relative;
+}
+
+.boxes {
+    height: 25vh;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--Light-grey);
+    margin: 0 40px;
+}
+
+.box {
+    margin: 0 13px;
+}
+
+.box h3 {
+    color: var(--Smokey-grey);
+    letter-spacing: 1px;
+}
+
+.boxes .count {
+    height: 9vh;
+    width: 80%;
+    border: 2px solid var(--Light-grey);
+    border-radius: 10px;
+    margin-top: 3px;
+    color: var(--Off-black);
+    font-size: 3vw;
+    padding-left: 1vw;
+    outline: none;
+}
+
+.boxes .count:focus{
+    border: 2px solid var(--Purple);
+}
+
+small {
+    color: red;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--Purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 130px;
+    top: 155px;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.display {
+    margin: 0 40px;
+    margin-top: 10px;
+}
+
+.display h1 {
+    font-weight: bolder;
+    line-height: 6vw;
+    font-size: 6vw;
+    color: var(--Purple);
+    font-style: italic;
+}
+
+.display span {
+    font-size: 5.5vw;
+    color: var(--Off-black);
+}
+
+@media (max-width: 1157px) {
+    small {
+        font-size: 1.5vw;
+    }
+    .submit-btn {
+        position: absolute;
+        right: 80px;
+        top: 150px;
+    }
+    .display {
+        margin: 0 40px;
+        margin-top: 30px;
+    }
+    
+    .display h1 {
+        font-weight: bolder;
+        line-height: 8vw;
+        font-size: 6vw;
+        color: var(--Purple);
+        font-style: italic;
+    }
+    
+    .display span {
+        font-size: 7vw;
+        color: var(--Off-black);
+    }
+}
+
+@media (max-width: 888px) {
+    .submit-btn {
+        position: absolute;
+        right: 30px;
+        top: 135px;
+    }
+    .display {
+        margin: 0 40px;
+        margin-top: 50px;
+    }
+    
+    .display h1 {
+        font-weight: bolder;
+        line-height: 8vw;
+        font-size: 6vw;
+        color: var(--Purple);
+        font-style: italic;
+    }
+    
+    .display span {
+        font-size: 7vw;
+        color: var(--Off-black);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        margin: 0 15px;
+        width: 90%;
+    }
+    .box {
+        margin: 0 5px;
+    }
+    small {
+        font-size: 2.5vw;
+    }
+    .display h1{
+        font-size: 7vw;
+    }
+    .display span {
+        font-size: 8vw;
+    }
+    .submit-btn {
+        width: 50px;
+        height: 50px;
+        right: 45%;
+        top: 155px;
+    }
+    .submit-btn img {
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 480px) {
+    .content {
+        width: 80%;
+    }
+    .boxes {
+        width: 90%;
+    }
+    small {
+        font-size: 3.2vw;
+    }  
+    .submit-btn{
+        top: 155px;
+    }
+    .boxes .count {
+        font-size: 5vw;
+        font-weight: bolder;
+        /* margin-top: 40px; */
+    }
+    .display {
+        margin: 0 16px;
+        margin-top: 70px;
+    }
+    .display h1 {
+        font-size: 10vw;
+    }
+    .display span {
+        font-size: 11vw;
+    }
+}
+@media (min-height: 896px) {
+    .container {
+        background-color: rebeccapurple;
+    }
+}
